@@ -1,6 +1,4 @@
-// export {default} from './storybook';
-
-import StorybookUI from './storybook';
+import StorybookUI from '../storybook';
 
 import Config from 'react-native-config';
 
@@ -112,13 +110,7 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
 });
-// export default App;
 
-console.log(`===> ${JSON.stringify(Config)}`);
+console.log(`DEBUG CONFIG ===> ${JSON.stringify(Config)}`);
 
 export default Config.LOAD_STORYBOOK === undefined ? StorybookUI : App;
-
-//1. react-native-config does not work
-//2. need to add new story
-//3. convert o to myatt
-//4. add testing
